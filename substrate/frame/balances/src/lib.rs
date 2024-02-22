@@ -756,7 +756,7 @@ pub mod pallet {
 		/// Returns `true` if the account did get upgraded, `false` if it didn't need upgrading.
 		pub fn ensure_upgraded(who: &T::AccountId) -> bool {
 			let mut a = T::AccountStore::get(who);
-			if /*a.flags.is_new_logic()*/ false {
+			if /*a.flags.is_new_logic()*/ true {
 				return false
 			}
 			//a.flags.set_new_logic();

@@ -756,10 +756,10 @@ pub mod pallet {
 		/// Returns `true` if the account did get upgraded, `false` if it didn't need upgrading.
 		pub fn ensure_upgraded(who: &T::AccountId) -> bool {
 			let mut a = T::AccountStore::get(who);
-			if a.flags.is_new_logic() {
+			if /*a.flags.is_new_logic()*/ false {
 				return false
 			}
-			a.flags.set_new_logic();
+			//a.flags.set_new_logic();
 			if !a.reserved.is_zero() && a.frozen.is_zero() {
 				if system::Pallet::<T>::providers(who) == 0 {
 					// Gah!! We have no provider refs :(

@@ -688,7 +688,7 @@ pub mod pallet {
 			origin: OriginFor<T>,
 			who: Vec<T::AccountId>,
 		) -> DispatchResultWithPostInfo {
-			ensure_signed(origin)?;
+			/*ensure_signed(origin)?;
 			if who.is_empty() {
 				return Ok(Pays::Yes.into())
 			}
@@ -704,7 +704,8 @@ pub mod pallet {
 				Ok(Pays::No.into())
 			} else {
 				Ok(Pays::Yes.into())
-			}
+			}*/
+			Ok(Pays::No.into())
 		}
 
 		/// Set the regular balance of a given account.

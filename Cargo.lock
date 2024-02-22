@@ -17310,7 +17310,7 @@ version = "0.4.2"
 source = "git+https://github.com/paritytech/arkworks-substrate#caa2eed74beb885dd07c7db5f916f2281dad818f"
 dependencies = [
  "ark-bls12-381-ext",
- "sp-crypto-ec-utils 0.4.1 (git+https://github.com/paritytech/polkadot-sdk)",
+ "sp-crypto-ec-utils 0.4.1 (git+https://github.com/opentensor/polkadot-sdk)",
 ]
 
 [[package]]
@@ -17319,7 +17319,7 @@ version = "0.4.2"
 source = "git+https://github.com/paritytech/arkworks-substrate#caa2eed74beb885dd07c7db5f916f2281dad818f"
 dependencies = [
  "ark-ed-on-bls12-381-bandersnatch-ext",
- "sp-crypto-ec-utils 0.4.1 (git+https://github.com/paritytech/polkadot-sdk)",
+ "sp-crypto-ec-utils 0.4.1 (git+https://github.com/opentensor/polkadot-sdk)",
 ]
 
 [[package]]
@@ -17578,7 +17578,7 @@ dependencies = [
 [[package]]
 name = "sp-crypto-ec-utils"
 version = "0.4.1"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 dependencies = [
  "ark-bls12-377",
  "ark-bls12-377-ext",
@@ -17592,8 +17592,8 @@ dependencies = [
  "ark-ed-on-bls12-381-bandersnatch",
  "ark-ed-on-bls12-381-bandersnatch-ext",
  "ark-scale",
- "sp-runtime-interface 17.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
- "sp-std 8.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
+ "sp-runtime-interface 17.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
+ "sp-std 8.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
 ]
 
 [[package]]
@@ -17616,7 +17616,7 @@ dependencies = [
 [[package]]
 name = "sp-debug-derive"
 version = "8.0.0"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -17636,12 +17636,12 @@ dependencies = [
 [[package]]
 name = "sp-externalities"
 version = "0.19.0"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 dependencies = [
  "environmental",
  "parity-scale-codec",
- "sp-std 8.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
- "sp-storage 13.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
+ "sp-std 8.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
+ "sp-storage 13.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
 ]
 
 [[package]]
@@ -17868,18 +17868,18 @@ dependencies = [
 [[package]]
 name = "sp-runtime-interface"
 version = "17.0.0"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 dependencies = [
  "bytes",
  "impl-trait-for-tuples",
  "parity-scale-codec",
  "primitive-types",
- "sp-externalities 0.19.0 (git+https://github.com/paritytech/polkadot-sdk)",
- "sp-runtime-interface-proc-macro 11.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
- "sp-std 8.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
- "sp-storage 13.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
- "sp-tracing 10.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
- "sp-wasm-interface 14.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
+ "sp-externalities 0.19.0 (git+https://github.com/opentensor/polkadot-sdk)",
+ "sp-runtime-interface-proc-macro 11.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
+ "sp-std 8.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
+ "sp-storage 13.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
+ "sp-tracing 10.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
+ "sp-wasm-interface 14.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
  "static_assertions",
 ]
 
@@ -17897,7 +17897,7 @@ dependencies = [
 [[package]]
 name = "sp-runtime-interface-proc-macro"
 version = "11.0.0"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 dependencies = [
  "Inflector",
  "proc-macro-crate",
@@ -18025,7 +18025,7 @@ version = "8.0.0"
 [[package]]
 name = "sp-std"
 version = "8.0.0"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 
 [[package]]
 name = "sp-storage"
@@ -18042,14 +18042,14 @@ dependencies = [
 [[package]]
 name = "sp-storage"
 version = "13.0.0"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 dependencies = [
  "impl-serde",
  "parity-scale-codec",
  "ref-cast",
  "serde",
- "sp-debug-derive 8.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
- "sp-std 8.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
+ "sp-debug-derive 8.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
+ "sp-std 8.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
 ]
 
 [[package]]
@@ -18091,10 +18091,10 @@ dependencies = [
 [[package]]
 name = "sp-tracing"
 version = "10.0.0"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 dependencies = [
  "parity-scale-codec",
- "sp-std 8.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
+ "sp-std 8.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
  "tracing",
  "tracing-core",
  "tracing-subscriber",
@@ -18192,13 +18192,13 @@ dependencies = [
 [[package]]
 name = "sp-wasm-interface"
 version = "14.0.0"
-source = "git+https://github.com/paritytech/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
+source = "git+https://github.com/opentensor/polkadot-sdk#fe9435db2fda7c9e2f4e29521564c72cac38f59b"
 dependencies = [
  "anyhow",
  "impl-trait-for-tuples",
  "log",
  "parity-scale-codec",
- "sp-std 8.0.0 (git+https://github.com/paritytech/polkadot-sdk)",
+ "sp-std 8.0.0 (git+https://github.com/opentensor/polkadot-sdk)",
  "wasmtime",
 ]
 

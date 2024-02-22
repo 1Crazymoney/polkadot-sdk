@@ -688,7 +688,7 @@ pub mod pallet {
 			origin: OriginFor<T>,
 			who: Vec<T::AccountId>,
 		) -> DispatchResultWithPostInfo {
-			ensure_signed(origin)?;
+			/*ensure_signed(origin)?;
 			if who.is_empty() {
 				return Ok(Pays::Yes.into())
 			}
@@ -704,7 +704,8 @@ pub mod pallet {
 				Ok(Pays::No.into())
 			} else {
 				Ok(Pays::Yes.into())
-			}
+			}*/
+			Ok(Pays::No.into())
 		}
 
 		/// Set the regular balance of a given account.
@@ -756,10 +757,10 @@ pub mod pallet {
 		/// Returns `true` if the account did get upgraded, `false` if it didn't need upgrading.
 		pub fn ensure_upgraded(who: &T::AccountId) -> bool {
 			let mut a = T::AccountStore::get(who);
-			if a.flags.is_new_logic() {
+			if /*a.flags.is_new_logic()*/ true {
 				return false
 			}
-			a.flags.set_new_logic();
+			//a.flags.set_new_logic();
 			if !a.reserved.is_zero() && a.frozen.is_zero() {
 				if system::Pallet::<T>::providers(who) == 0 {
 					// Gah!! We have no provider refs :(

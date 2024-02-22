@@ -105,7 +105,7 @@ pub struct AccountData<Balance> {
 	pub frozen: Balance,
 	/// Extra information about this account. The MSB is a flag indicating whether the new ref-
 	/// counting logic is in place for this account.
-	pub flags: ExtraFlags,
+	pub fee_frozen: Balance,
 }
 
 const IS_NEW_LOGIC: u128 = 0x80000000_00000000_00000000_00000000u128;

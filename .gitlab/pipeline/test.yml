@@ -504,7 +504,7 @@ cargo-hfuzz:
     - for target in $(cargo read-manifest | jq -r '.targets | .[] | .name'); do
       cargo hfuzz run "$target" || { printf "fuzzing failure for %s\n" "$target"; exit 1; }; done
 
-# cf https://github.com/paritytech/polkadot-sdk/issues/1652
+# cf https://github.com/opentensor/polkadot-sdk/issues/1652
 test-syscalls:
   stage: test
   extends:
